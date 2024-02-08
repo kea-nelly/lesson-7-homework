@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>My Weather App</title>
   </head>
   <body>
@@ -29,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="city">South Africa</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
               Thursday 16:00, scattered clouds
               <br />
@@ -38,7 +39,7 @@
           </div>
           <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌥️</div>
-            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-temperature" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
@@ -50,7 +51,8 @@
         >, is
         <a href="https://github.com/kea-nelly/lesson-7-homework" target="_blank"
           >open-sourced on GitHub</a
-        >and
+        >
+        and
         <a
           href="https://app.netlify.com/sites/lesson-7-weather-app/configuration/general"
           target="_blank"
